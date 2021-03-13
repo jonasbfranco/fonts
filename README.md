@@ -7,3 +7,4 @@ My fonts used in Linux
 1. `cd fonts/fonts && cp *.ttf *.otf $HOME/.local/share/fonts/`
 1. `fc-cache -fv`
 
+## Based on Marcos files - Terminal Root
