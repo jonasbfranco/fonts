@@ -5,6 +5,8 @@ My fonts used in Linux
 ```shell
 $ git clone https://github.com/jonasbfranco/fonts.git
 $ cd fonts/fonts && cp *.ttf *.otf $HOME/.local/share/fonts/
+### ou assim, pode também mudar a variável $HOME/ por ~/
+$ cd fonts/fonts && cp * $HOME/.local/share/fonts/
 $ fc-cache -fv
 ```
 
@@ -32,7 +34,14 @@ source ~/SCRIPTS/alias.sh
 
 ```
 
-
+### Permissoes para os arquivos da pasta SCRIPTS
+```shell
+$ cd fonts && sudo cp -Rf SCRIPTS $HOME/ && cd $HOME/SCRIPTS/
+### ou assim, pode também mudar a variável $HOME/ por ~/
+$ cd fonts && sudo cp -Rf SCRIPTS ~/ && cd ~/SCRIPTS/
+$ sudo chown $USER:$USER *.sh
+$ sudo chmod +x *.sh
+```
 
 ### Ubuntu: Comandos de Atualização (update, upgrade dist-upgrade)
 
